@@ -1,0 +1,10 @@
+security infrastructure  cluster on Azure :
+
+Azure 
+	set inactive timeout to 15 minutes
+	enable MFA for Glaobal Azure admin account
+	disable access to Active Directory and App registration
+	After creating vlan and 2 computers,internal communicaiton is secured by doing the following
+	SSH connection, with keys authorized on each computer only
+	installation and configuration of mpich over the internal vlan
+on Lamp stack only open listenning port used by the website
