@@ -1,5 +1,5 @@
-Scan the host for the open service port and found running port 21 (FTP) service.
-Repoorted THAT Port 21 – Running vsftpd
+Scan the host for the open service port, found port 21 (FTP) service running
+Port 21 – Running vsftpd
 
 version 2.3.4,is exploitable:
 Commands
