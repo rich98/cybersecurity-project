@@ -1,0 +1,62 @@
+Part one: Considering what you ve learned through the course, how would you describe the process of User Authentication 
+on a web site by having three different factors of authentication? Answers to this should include information about the different factors (
+Knowledge, Ownership, Inherence) and their examples, and also the whole process, for example, “user will show his face to the 
+camera after entering the password and pin from the token”. 
+
+
+Part One Answer: 
+User Authentication on a Website with Three-Factor Authentication
+User authentication is a crucial aspect of web security, and employing three different factors enhances the overall protection. These factors are:
+1.	Knowledge Factor:
+•	Example: Users enter a password known only to them.
+•	Process: The user provides a unique password during login.
+2.	Ownership Factor:
+•	Example: Users possess a physical device like a security token or smartphone.
+•	Process: After entering the password, the user interacts with a token or app generating a one-time code.
+3.	Inherence Factor:
+•	Example: Biometric data such as fingerprints or facial recognition.
+•	Process: Following password and ownership verification, the user undergoes a biometric scan, like a facial recognition check.
+In summary, a user accessing a website employing three-factor authentication would first enter a password. Subsequently, they interact with a physical device for ownership confirmation, and finally, undergo a biometric scan to establish inherence.
+
+Part two: Describe, at least four, attack vectors on a company that produces shoes, 
+both Physical and Digital. Answers to this should include information about what can be attacked and how, for example, 
+“considering that the company produces shoes, they need to, somehow, receive money from the buyers/distributors, 
+and an attack vector can be the payment processor of the company”
+
+Part Two Answer: 
+Attack Vectors on a Shoe Company (Physical and Digital)
+1.	Digital Attack Vectors:
+•	Payment Processor Compromise: Attackers target the company's payment processing system to gain unauthorized access to financial transactions.
+•	Supply Chain Cyber-Attack: Malicious actors compromise the digital systems managing the supply chain, potentially introducing malware into the production process.
+•	Intellectual Property Theft: Cybercriminals may attempt to steal design blueprints, patents, or other intellectual property related to the company's shoe designs.
+•	Phishing Attacks on Employees: Attackers send deceptive emails to company employees, aiming to gain unauthorized access or extract sensitive information.
+2.	Physical Attack Vectors:
+•	Warehouse Theft: Criminals physically break into the company's warehouses to steal finished shoe products.
+•	Transportation Hijacking: Attackers intercept and hijack shipments during transportation, leading to theft of shoes in transit.
+•	Point-of-Sale Tampering: Criminals may physically tamper with the company's retail point-of-sale systems to compromise customer payment information.
+•	Corporate Espionage: Competitors or malicious actors physically infiltrate the company's offices to gather proprietary information.
+
+Part three: Considering the wireless security, describe in your own words what Krack Attack is. 
+(hard one) Answers to this should reference “key reinstallation attacks” in some way, for example, “Krack attack is an attack on key reinstallation”. 
+
+Part Three Answer: 
+Krack Attack in Wireless Security
+The Krack Attack, short for "Key Reinstallation Attack," is a vulnerability in the WPA2 protocol, a widely used standard for securing Wi-Fi networks. 
+In simple terms, it exploits the process of reinstalling an already-in-use encryption key during a four-way handshake.
+During a standard WPA2 handshake, an attacker can intercept and manipulate the key exchange process, forcing the reuse of a cryptographic key. 
+This allows them to decrypt and potentially manipulate the transmitted data. Essentially, Krack Attack exposes a flaw in the WPA2 protocol, making Wi-Fi networks susceptible to unauthorized access and data interception.
+
+
+Part four: Considering what you’ve learned through the course, describe what machines should AntiVirus and Firewalls be installed in a 
+network where you have 10 servers and 10 client machines, where all of them have internet and process information provided by outsiders of the company. 
+Answers to this should be at least “all of them” as the whole company should be protected by both solutions.
+
+Part Four Answer:
+Placement of AntiVirus and Firewalls in a Network
+In a network with 10 servers and 10 client machines, where all devices have internet access and process information from external sources, 
+both AntiVirus and Firewalls should be installed on all machines. This includes servers and client machines alike. Comprehensive protection 
+is crucial to safeguard the entire network from potential threats originating from external sources. By deploying AntiVirus software and Firewalls 
+on all machines, the company can establish a robust defense mechanism against malware, unauthorized access, and other security risks, ensuring 
+the security of both client and server-side components.
+
+
