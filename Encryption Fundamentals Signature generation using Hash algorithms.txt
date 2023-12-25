@@ -9,17 +9,11 @@ Private key: 11
 Public key: 5
 
 Modulus: 14
+private key=11, Public key=5, Modulus:14
+Hash function : (x+3) mod 10
 
-1.	Hash Function: Calculate the hash of the message using the provided hash function:
-Hash(2)=(2+3)mod 10=5Hash(2)=(2+3)mod10=5
-The hash value is 5.
-2.	Signature Generation (RSA): Use the private key and modulus for RSA to generate the signature. The signature generation formula for RSA is:
-Signature=Hash(2)Private Keymod ModulusSignature=Hash(2)Private KeymodModulus
-Substitute the values:
-Signature=511mod 14Signature=511mod14
-Use modular exponentiation to calculate this:
-Signature=1220703125mod 14Signature=1220703125mod14
+2^11 mod 14 = 4
+verification : 4^5 mod 14 = 2 ok
 
-Calculate the result:
-Signature=9Signature=9
-So, the valid signature for the message "2" using the given hash function and RSA parameters is 9.
+Hash : (2+3) mod 10 = 5
+Signature : (5, 10)
