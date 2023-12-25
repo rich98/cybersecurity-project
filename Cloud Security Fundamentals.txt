@@ -1,6 +1,3 @@
-L
-Certainly! Here's a cleaner and organized version of the information you provided:
-
 LAMP Deployment Steps in Azure:
 Virtual Machine Setup:
 
