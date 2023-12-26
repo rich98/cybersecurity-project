@@ -1,6 +1,6 @@
 user name 1 # des
 Cracked password# 123
-
+Hash $krb5pa$23$des$DENYDC$$32d396a914a4d0a78e979ba75d4ff53c1db7294141760fee05e434c12ecf8d5b9aa5839e09a2244893aff5f384f79c37883f154a
 see des-123.png
 
 username2 # u5
