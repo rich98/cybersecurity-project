@@ -9,23 +9,23 @@ Private key: 11
 Public key: 5
 
 Modulus: 14
-Hash the message: We use the provided hash function (x+3) mod 10 to hash the message 2. So, the hash of the message is (2+3) mod 10 = 5.
 
-Encrypt the hash: We then use RSA encryption with the provided private key 11 and modulus 14 to encrypt the hash. The encryption formula for RSA is c = m^e mod n, where m is the message (or in this case, the hash), e is the key, and n is the modulus. So, the encrypted hash (i.e., the signature) is 5^11 mod 14.
+Hashing the message: We use the provided hash function (x+3) mod 10. Substituting x with 2 (our message), we get (2+3) mod 10 = 5 mod 10 = 5. So, the hash of the message 2 is 5.
 
-(5 ** 11) % 14 calculates the remainder when 5 raised to the power of 11 is divided by 14.
+Encrypting the hash: We use RSA encryption with the provided private key and modulus. The encryption formula for RSA is c = m^e mod n, where m is the message (or hash in our case), e is the key, and n is the modulus. Substituting m with 5 (our hash), e with 11 (our private key), and n with 14 (our modulus), we get c = 5^11 mod 14.
 
-In Python, the ** operator is used for exponentiation and the % operator is used for modulus.
+Calculating 5^11 mod 14 calculating the powers of 5 modulo 14 until we find a pattern. Here’s how:
 
-The result of (5 ** 11) % 14 is 9.
+5^1 mod 14 = 5
+5^2 mod 14 = 11
+5^3 mod 14 = 13
+5^4 mod 14 = 9
+5^5 mod 14 = 11
+5^6 mod 14 = 13
+5^7 mod 14 = 9
 
+We can see that starting from 5^3, the result cycles every two powers. Since 11 is odd, 5^11 mod 14 will have the same result as 5^3 mod 14, which is 13.
 
-Python
+So, the RSA encryption of the hash 5 with the private key 11 and modulus 14 is 13.
 
-# Python code to calculate the signature
-m = 5  # hash of the message
-e = 11  # private key
-n = 14  # modulus
-
-signature = (m ** e) % n
-print(signature)
+Therefore, the signature for the message 2 is 13. This signature is what you would send along with your message to ensure its authenticity. The receiver can then decrypt the signature using your public key to verify the hash and, consequently, the integrity of the message.
