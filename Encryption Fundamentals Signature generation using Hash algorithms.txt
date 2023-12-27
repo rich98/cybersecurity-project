@@ -9,11 +9,17 @@ Private key: 11
 Public key: 5
 
 Modulus: 14
-private key=11, Public key=5, Modulus:14
-Hash function : (x+3) mod 10
+Hashing the message:
+The hash function is given as (x+3)mod10. 
+Substituting x=2 (the message), we get:
+h=(2+3)mod10=5mod10=5
 
-2^11 mod 14 = 4
-verification : 4^5 mod 14 = 2 ok
 
-Hash : (2+3) mod 10 = 5
-Signature : (5, 10)
+Signing the message:
+The RSA encryption uses the formula c=memodn, where m is the message, e is the private key, and n is the modulus. Substituting m=h=5, e=11, and n=14, we get:
+s=hemodn=511mod14
+
+
+Let’s calculate this.
+s = (5**11) % 14
+print(s)
