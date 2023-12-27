@@ -9,17 +9,23 @@ Private key: 11
 Public key: 5
 
 Modulus: 14
-Hashing the message:
-The hash function is given as (x+3)mod10. 
-Substituting x=2 (the message), we get:
-h=(2+3)mod10=5mod10=5
+Hash the message: We use the provided hash function (x+3) mod 10 to hash the message 2. So, the hash of the message is (2+3) mod 10 = 5.
+
+Encrypt the hash: We then use RSA encryption with the provided private key 11 and modulus 14 to encrypt the hash. The encryption formula for RSA is c = m^e mod n, where m is the message (or in this case, the hash), e is the key, and n is the modulus. So, the encrypted hash (i.e., the signature) is 5^11 mod 14.
+
+(5 ** 11) % 14 calculates the remainder when 5 raised to the power of 11 is divided by 14.
+
+In Python, the ** operator is used for exponentiation and the % operator is used for modulus.
+
+The result of (5 ** 11) % 14 is 9.
 
 
-Signing the message:
-The RSA encryption uses the formula c=memodn, where m is the message, e is the private key, and n is the modulus. Substituting m=h=5, e=11, and n=14, we get:
-s=hemodn=511mod14
+Python
 
+# Python code to calculate the signature
+m = 5  # hash of the message
+e = 11  # private key
+n = 14  # modulus
 
-Let’s calculate this.
-s = (5**11) % 14
-print(s)
+signature = (m ** e) % n
+print(signature)
